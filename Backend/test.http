@@ -1,0 +1,36 @@
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "title": "The Catcher in the Rye",
+  "author": "J.D. Salinger",
+  "isbn": "978-0-316-76948-0"
+}
+
+###
+//Add another Book to the Library:
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "title": "To Kill a Mockingbird",
+  "author": "Harper Lee",
+  "isbn": "978-0-06-112008-4"
+}
+
+###
+
+//List all Books in the Library:
+GET http://localhost:3000/books
+
+####
+
+//Search for a Book by Title:
+GET http://localhost:3000/books?title=The Catcher in the Rye
+
+###
+
+//Delete a Book by Title:
+DELETE http://localhost:3000/books/The Catcher in the Rye
+
+
