@@ -30,7 +30,7 @@ initializeDB();
 
 // Welcome message for the root URL
 app.get('/', (req, res) => {
-  res.send('Welcome to the Library API');
+  res.send('Welcome to the Library of API');
 });
 
 // Middleware for handling database errors
