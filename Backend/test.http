@@ -20,6 +20,16 @@ Content-Type: application/json
 
 ###
 
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "title": "To Kills a Mockingbird",
+  "author": "Harper Lee",
+  "isbn": "978-0-06-112008-4"
+}
+####
+
 //List all Books in the Library:
 GET http://localhost:3000/books
 
